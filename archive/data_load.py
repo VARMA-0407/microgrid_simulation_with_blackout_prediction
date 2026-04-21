@@ -100,7 +100,7 @@ def scale_to_ieee_base(load_norm: pd.Series, base_mw: float = IEEE33_BASE_LOAD_M
     return load_norm * base_mw
 
 
-def prepare_load_series(path: str, n_days: int = 60) -> pd.Series:
+def prepare_load_series(path: str, n_days: int = 30) -> pd.Series:
     """
     Full pipeline: raw CSV → simulation-ready hourly load in MW.
 
